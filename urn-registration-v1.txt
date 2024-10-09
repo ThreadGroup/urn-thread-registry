@@ -59,7 +59,7 @@ It is not foreseen that URNs within this namespace will undergo resolution. Thre
 
 Documentation:  
 
-The items registered in the URN "thread" registry are published in a document that can be publicly accessed at:  https://github.com/ThreadGroup/urn-thread-registry/blob/master/registry.md
+The items registered in the URN "thread" registry are published in a document that can be publicly accessed at:  https://github.com/ThreadGroup/urn-thread-registry/
 
 Additional Information:
 
