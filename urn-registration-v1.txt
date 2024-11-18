@@ -4,7 +4,7 @@ Namespace Identifier:  thread
 
 Version:               1
 
-Date:                  2024-10-09
+Date:                  2024-11-18
 
 Registrant:  
 
@@ -63,7 +63,7 @@ The items registered in the URN "thread" registry are published in a document th
 
 Additional Information:
 
-The Thread Specification 1.4 created by Thread Group contains additional information about URN definitions which is referenced by the entries in the URN "thread" registry. See for more information and getting access to the document: https://www.threadgroup.org/support#specifications
+The Thread Specification 1.4 created by Thread Group contains additional information about URN definitions which is referenced by the entries in the URN "thread" registry. See for more information and getting access to the document: https://www.threadgroup.org/support/
 
 Revision Information:          
 
