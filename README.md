@@ -1,4 +1,4 @@
-# URN "thread" Registry
+# URN "thread" Registry README
 
 This Git repository contains the registry for [Uniform Resource Names (URNs)](https://www.rfc-editor.org/rfc/rfc8141.html) managed by [Thread Group, Inc.](https://www.threadgroup.org/). 
 All URNs of the form "urn:thread:...." are in scope of this registry. The namespace identifier (NID) is "thread".
