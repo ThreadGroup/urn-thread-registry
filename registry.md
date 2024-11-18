@@ -1,6 +1,8 @@
-# registry.md
+# URN "thread" Registry
 
 Version ID: 1.4.0
+
+## 1. General
 
 ### URN rules
 The terminology and rules for "thread" URNs are defined in [urn-registration-v1.txt](urn-registration-v1.txt).
@@ -9,8 +11,10 @@ The terminology and rules for "thread" URNs are defined in [urn-registration-v1.
 Registered `sub-namespace` entries MUST NOT contain privacy- or security-sensitive information. The `sn-content` elements MAY contain privacy- or security-sensitive information if the information is properly protected (cryptographically and/or physically) during URN handling.
 Any URNs that may contain privacy- or security-sensitive `sn-content` are marked as "private" in the Security column of the table. "public" means no privacy- or security-risks apply.
 
+### References
+- [ThreadSpec] Thread Group, Inc., Thread Specification v1.4.0, September 26, 2024.
 
-## Registry entries
+## 2. Registry entries
 
 | URN sub-namespace and sn-content | Short Description                 | Security | [ThreadSpec] References
 |----------------------------------|-----------------------------------|----------|------------------------ 
@@ -21,7 +25,7 @@ Any URNs that may contain privacy- or security-sensitive `sn-content` are marked
 | `spec:<version>:sec:<section>`   | Thread Spec Section Reference     | public   | 2.9.4
 
 
-## Entry details
+## 3. Entry details
 
 ### dataset:act:hex:\<hex-string>	
 An Active Operational Dataset as a hexadecimal string encoding of all included TLVs. 
@@ -61,7 +65,3 @@ A reference to a numbered Section of a Thread Specification.
 - \<section> is a string of the section number, without trailing dot.
 
 Example: `urn:thread:spec:1.4.0:sec:2.9.5`
-
-
-## References
-- [ThreadSpec] Thread Specification v1.4.0, 2024.
