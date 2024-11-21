@@ -5,7 +5,7 @@ Version ID: 1.4.0
 ## 1. General
 
 ### URN rules
-The terminology and rules for "thread" URNs are defined in [urn-registration-v1.txt](urn-registration-v1.txt).
+The terminology, syntax and rules for "thread" URNs are defined in [urn-registration-v1.txt](urn-registration-v1.txt).
 
 ### Security 
 Registered `sub-namespace` entries MUST NOT contain privacy- or security-sensitive information. The `sn-content` elements MAY contain privacy- or security-sensitive information if the information is properly protected (cryptographically and/or physically) during URN handling.

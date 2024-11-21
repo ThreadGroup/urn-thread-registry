@@ -4,7 +4,7 @@ Namespace Identifier:  thread
 
 Version:               1
 
-Date:                  2024-11-18
+Date:                  2024-11-21
 
 Registrant:  
 
@@ -63,9 +63,23 @@ own registry for registering any sub-namespace elements. This registry
 will define any additional requirements for the sn-content element for
 each registered sub-namespace element. Any use of r-components,
 q-components or f-components is not defined in the current version 1
-definition. Note that sn-content allows for the inclusion of base64
-encoded data, or hexadecimal encoded data, as well as data with the
-":" character.
+definition.
+
+Note that sn-content allows for the inclusion of base64 encoded data,
+or hexadecimal encoded data, as well as data with the ":" character. In
+most cases, a particular sub-namespace will impose stricter constraints
+on the allowed characters for sn-content than the constraints as
+specified by the above ABNF rules. A generic parser for "thread" URNs,
+which does not have knowledge of these sub-namespace constraints,
+therefore cannot validate URNs based only on the ABNF rules.
+
+A parser for "thread" URNs is expected to apply the syntax rules listed
+here in combination with a list of known (registered) sub-namespaces of
+interest and their associated sn-content constraints. For unrecognized
+sub-namespace elements, a parser may not be able to identify where in
+the string the sub-namespace stops and the sn-content starts. This is
+deemed acceptable, since the parser will be unable to interpret the
+resulting URN in any case.
 
 Assignment:  
 
@@ -74,13 +88,23 @@ Group based on the rules of engagement as defined for this committee.
 Assignments are recorded in the URN "thread" registry kept by Thread
 Group. An assignment may consist of a final URN (i.e. without the
 optional sn-content element) or of a sub-namespace definition for a
-particular purpose (where the sn-content element is present and may
-vary in contents). Each registry entry must define at least five
-elements: sub-namespace definition, whether it includes sn-content, a
-short description, security classification, and a link/reference to the
-detailed specifications for it.
+particular purpose, where the sn-content element is present and may
+vary in contents.
 
-Security and Privacy:  
+Each registry entry MUST define at least five elements: sub-namespace
+definition, whether it includes sn-content, a short description,
+security classification, and a link/reference to the detailed
+specifications for it.
+
+Each registered sub-namespace element MUST NOT be a prefix of any other
+registered sub-namespace element. A new registration entry MAY reuse
+an existing sub-namespace element and extend the sn-content definition
+for it. Any such extension MUST be done by adding a ":" character
+followed by an additional sn-content element. Such an extension MUST NOT
+be approved if the existing sn-content element as registered allows the
+inclusion of a ":" character, to avoid parsing ambiguity.
+
+Security and Privacy:
 
 Any registered URNs MUST NOT contain privacy-sensitive information about
 persons such as names, addresses, or personal data. URNs with desig-
