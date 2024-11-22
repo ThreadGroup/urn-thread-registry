@@ -16,14 +16,14 @@ Any URNs that may contain privacy- or security-sensitive `sn-content` are marked
 
 ## 2. Registry entries
 
-| URN sub-namespace and sn-content | Short Description                 | Security | [ThreadSpec] References
-|----------------------------------|-----------------------------------|----------|------------------------ 
-| `dataset:act:hex:<hex-string>`   | Active Operational Dataset (hex)  | private  | 8.4.2.2.2, 8.7.4.7
-| `dataset:pen:hex:<hex-string>`   | Pending Operational Dataset (hex) | private  | 8.4.2.2.2, 8.7.4.7
-| `pc:<code-string>`               | Thread Administration Passcode    | private  | 8.4.9
-| `spec:<version>`                 | Thread Specification Version      | public   | 2.9.4
-| `spec:<version>:sec:<section>`   | Thread Spec Section Reference     | public   | 2.9.4
-
+| URN sub-namespace and sn-content | Short Description                                       | Security | [ThreadSpec] References
+|----------------------------------|---------------------------------------------------------|----------|------------------------ 
+| `dataset:act:hex:<hex-string>`   | Active Operational Dataset (hex)                        | private  | 8.4.2.2.2, 8.7.4.7
+| `dataset:pen:hex:<hex-string>`   | Pending Operational Dataset (hex)                       | private  | 8.4.2.2.2, 8.7.4.7
+| `pc:<code-string>`               | Thread Administration Passcode                          | private  | 8.4.9
+| `spec:<version>`                 | Thread Specification Version                            | public   | 2.9.4
+| `spec:<version>:sec:<section>`   | Thread Spec Section Reference                           | public   | 2.9.4
+| `spec:<version>:<string>:<string>` | Reserved (for future Thread Spec Reference definitions) | public | 2.9.4
 
 ## 3. Entry details
 
@@ -65,3 +65,10 @@ A reference to a numbered Section of a Thread Specification.
 - \<section> is a string of the section number, without trailing dot.
 
 Example: `urn:thread:spec:1.4.0:sec:2.9.5`
+
+
+### spec:\<version>:\<string>:\<string>
+Reserved for any future definitions of a reference to a part of a Thread Specification.
+- \<string> is a string per ABNF `sn-content` but not containing any colon ':' character.
+
+Examples: `urn:thread:spec:1.5.0:fig:3-17`, `urn:thread:spec:1.3.0:secname:Security%20Formats`

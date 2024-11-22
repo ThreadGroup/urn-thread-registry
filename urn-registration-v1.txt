@@ -99,10 +99,8 @@ specifications for it.
 Each registered sub-namespace element MUST NOT be a prefix of any other
 registered sub-namespace element. A new registration entry MAY reuse
 an existing sub-namespace element and extend the sn-content definition
-for it. Any such extension MUST be done by adding a ":" character
-followed by an additional sn-content element. Such an extension MUST NOT
-be approved if the existing sn-content element as registered allows the
-inclusion of a ":" character, to avoid parsing ambiguity.
+for it. Any such extension MUST be made within the constraints for
+sn-content defined by the original sub-namespace element registration.
 
 Security and Privacy:
 
