@@ -10,7 +10,7 @@ All URNs of the form "urn:thread:...." are in scope of this registry. The namesp
 The registry is versioned in lockstep with the Thread Specification version. Editorial updates may be applied at any time and are versioned using Git commits in this repository.
 
 ## IANA Registration
-Registration of the "thread" URN namespace has been requested (using [this template](urn-registration-v1.txt)) in 2024. Once approved, the entry will appear in the [IANA Uniform Resource Names (URN) Namespaces registry](https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml).
+The registration of the "thread" URN namespace was made by IANA (using [this template](urn-registration-v1.txt)) in December 2024. See the [IANA Uniform Resource Names (URN) Namespaces registry](https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml).
 
 ## License
 See [LICENSE](LICENSE) for conditions that apply to the use of the information in this registry.
